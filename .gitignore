@@ -1,0 +1,18 @@
+# ============================================================
+# .gitignore — modo "deny-all + allowlist"
+# Este repositório tem a raiz no Desktop inteiro. Por segurança,
+# ignoramos TUDO por padrão e liberamos apenas a pasta do projeto.
+# Assim, um "git add -A" distraído NÃO versiona jogos, instaladores,
+# Firefox.exe, ISOs ou as outras pastas de Programação/.
+# ============================================================
+
+# 1) Ignora tudo na raiz (Desktop)
+/*
+
+# 2) Mantém o próprio .gitignore versionado
+!/.gitignore
+
+# 3) Libera o caminho até a pasta do projeto SOC
+!/Programação
+/Programação/*
+!/Programação/ClaudeLinuxSiem
